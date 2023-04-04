@@ -4,5 +4,10 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  font-family: 'Inter';
+  text-align: center;
+  background-color: #efefef;
+}
+
+p {
+  margin: 0;
 }

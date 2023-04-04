@@ -1,8 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Link from "next/link";
+import {
+  TOKEN_GLOBAL_PRIMARY_BRAND_COLOUR,
+  TOKEN_GLOBAL_PRIMARY_BTN_BG,
+  TOKEN_GLOBAL_BASICS_BLACK,
+} from "../styles/tokens";
 
 export default function Home() {
   return (
@@ -14,8 +16,41 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <div
+          style={{
+            backgroundColor: TOKEN_GLOBAL_PRIMARY_BRAND_COLOUR,
+            textAlign: "center",
+            padding: "1em",
+            color: TOKEN_GLOBAL_BASICS_BLACK,
+            fontWeight: "bold",
+            fontSize: "2em",
+          }}
+        >
+          <p>ACME</p>
+        </div>
         <div>
-          <p>Demo Page !</p>
+          <h1
+            style={{
+              color: TOKEN_GLOBAL_BASICS_BLACK,
+              marginTop: "3em",
+            }}
+          >
+            HEADER (JS)
+          </h1>
+          <Link href="/scss">
+            <button
+              style={{
+                backgroundColor: TOKEN_GLOBAL_PRIMARY_BTN_BG,
+                textAlign: "center",
+                color: TOKEN_GLOBAL_BASICS_BLACK,
+                fontSize: "1em",
+                padding: "1em",
+                marginTop: "1em",
+              }}
+            >
+              BUTTON
+            </button>
+          </Link>
         </div>
       </main>
     </>

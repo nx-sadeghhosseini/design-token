@@ -1,0 +1,24 @@
+@import "tokens";
+
+.header {
+  background-color: $token-global-primary-brand-colour;
+  text-align: center;
+  padding: 1em;
+  color: $token-global-basics-black;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.h1 {
+  color: $token-global-basics-black;
+  margin-top: 3em;
+}
+
+.btn {
+  background-color: $token-global-primary-btn-bg;
+  text-align: center;
+  color: $token-global-basics-black;
+  font-size: 1em;
+  padding: 1em;
+  margin-top: 1em;
+}
