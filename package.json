@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "deploy": "yarn build && yarn export",
+    "deploy": "yarn transform && yarn build && yarn export",
     "start": "next start",
     "lint": "next lint",
     "transform": "node ./transform.js"
